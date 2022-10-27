@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "takota-otf";
+    src: url(./font/Takota-7LRl.otf) format(otf);
+}
+
+@font-face {
+    font-family: "takota-ttf" ;
+    src: url(./font/Takota-BRa8.ttf) format(truetype);
+}
+@font-face {
+    font-family: "oranienbaum" ;
+    src: url(./font/Oranienbaum.ttf) format(truetype);
+}
+/*
+    Global
+*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+*{
+    font-family: "oranienbaum", 'Courier New', Courier, monospace;
+}
+/*
+    NAVBAR
+*/
+nav{
+    width: 100%;
+    position: fixed;
+}
+nav ul {
+    max-height: 4vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+}
+.change-back-nav-color{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+nav ul a li{
+    list-style: none;
+    font-family: "oranienbaum" , "Courier New", Courier, monospace;
+    font-size: 48px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+nav ul a:hover li{
+    text-decoration: line-through;
+
+}
+.active{
+    text-decoration: line-through;
+
+}
+nav ul section p{
+    font-family: "takota-otf", "takota-ttf", "Courier New", Courier, monospace;
+    font-size: 50px;
+    color: white;
+
+}
+
+/* Header */
+
+header img{
+    width: 100%;
+    height: 99.7vh;
+    object-fit: cover;
+    object-position: 100% ;
+}
+
+
+/* Home section */
+
+.grid-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.first-section{
+    height: 100vh;
+    border-bottom: 50px dashed white;
+    overflow: hidden;
+}
+.home-picture{
+    width: 50vw;
+    object-fit: cover;
+    object-position: bottom;
+    size: 100px;
+}
+
+.home-content{
+    margin-top: 20%;
+    padding-right: 5%;
+}
+.home-content h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+.home-content p{
+    text-align: center;
+    font-size: 32px;
+}
+
+.second-section{
+    overflow: hidden;
+}
+.second-section .home-picture {
+    height: 100vh;
+
+    object-fit: cover;
+    object-position: bottom;
+    size: 100px;
+}
+
+footer{
+    height: 40vh;
+    background-color: rgba(255, 255, 255, 1)
+}
+footer section form input {
+}
