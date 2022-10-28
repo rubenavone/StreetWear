@@ -119,9 +119,41 @@ header img{
 }
 
 footer{
-    height: 40vh;
-    background-color: rgba(255, 255, 255, 1)
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-footer section form input {
-    background-color: black;
+
+.footer-contact{
+    display: grid;
+    text-align: center;
+    font-size: 25px;
+    border-left: 5px solid black;
+    border-right: 5px solid black;*
+}
+.footer-contact div{
+    display: flex;
+    flex-direction: column;
+}
+.footer-contact input {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 20vw;
+    margin:auto;
+    margin-top: 1rem;
+}
+.footer-contact textarea {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 20vw;
+    margin:auto;
+    margin-top: 5px;
+}
+.footer-contact label {
+    color: black;
+
+}
+
+.random-pic{
+    width: 50vw;
 }
